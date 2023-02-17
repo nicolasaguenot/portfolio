@@ -45,6 +45,19 @@ export default class MyDocument extends Document {
 // `getInitialProps` belongs to `_document` (instead of `_app`),
 // it's compatible with server-side generation (SSG).
 MyDocument.getInitialProps = async (ctx) => {
+
+  const initialProps = await Document.getInitialProps(ctx);
+
+  console.log(initialProps);
+  /*
+  if (ctx.res?.statusCode === 404) {
+    ctx.res.writeHead(302, { Location: '/' })
+    ctx.res.end()
+    return
+  }
+
+   */
+
   // Resolution order
   //
   // On the server:
@@ -76,12 +89,7 @@ MyDocument.getInitialProps = async (ctx) => {
       enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
     });
 
-  const initialProps = await Document.getInitialProps(ctx);
-  if (ctx.res?.statusCode === 404) {
-    ctx.res.writeHead(302, { Location: '/' })
-    ctx.res.end()
-    return
-  }
+
   return {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.

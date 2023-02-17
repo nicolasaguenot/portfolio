@@ -39,9 +39,6 @@ export default function Index({ projects, setTheme }) {
           <Typography variant="h6" component="h1" align={"center"} className={classes.root}>
             { name }
           </Typography>
-          <IconButton edge="end" color="inherit" onClick={toggleTheme}>
-            {theme.palette.type === "dark" ? <Brightness7/> : <Brightness4/>}
-          </IconButton>
         </Toolbar>
       </AppBar>
       <Toolbar className={classes.toolbar} />
