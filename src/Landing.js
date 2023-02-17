@@ -54,12 +54,11 @@ export default function Landing() {
 
     return (
         <Grid container justify="center" alignItems="center" className={classes.cont}>
-            <Grid item xs={12} lg={6}>
-                <Typography variant={mdDown ? "h2" : "h1"}>
+            <Grid item xs={12} lg={6} offset-lg={1}>
+                <Typography variant="h1" component={"span"}>
                     {landing.title}
                 </Typography>
                 <Typography variant={mdDown ? "h5" : "h4"} component="h2" className={classes.subtitle}>
-
                     <ReactTyped
                         strings={landing.subtitles}
                         typeSpeed={40}
@@ -85,15 +84,14 @@ export default function Landing() {
                     }
                 </Grid>
             </Grid>
-
             <Hidden mdDown>
                 <Fade in={true} style={{ transitionDelay: '100ms' }}>
                     <Grid item lg={6}>
                         <Image
                             src="/landing.svg"
                             alt="Landing"
-                            width="900.94"
-                            height="787"
+                            width="800"
+                            height="700"
                         />
                     </Grid>
                 </Fade>

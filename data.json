@@ -1,154 +1,147 @@
 {
-    "name": "Kaustubh Odak",
+    "name": "Nicolas Aguenot - Full stack developer & Com to Code owner",
+    "description": "Nicolas Aguenot - Full stack developer & Com to Code owner, France",
     "landing": {
-        "title": "Hi, I'm Kaustubh",
+        "title": "Hi, I'm Nicolas",
         "subtitles": [
-            "Full-stack developer 🌐",
-            "Cross-platform developer 📱💻",
-            "Exploring cloud ☁️",
-            "Beginner in devops ♾️",
-            "Just getting started 📈"
+            "Full-stack developer",
+            "Symfony developer",
+            "Ibexa DXP / eZ Platform / eZ Publish developer",
+            "Cross-platform Flutter developer",
+            "Webservices and API developer",
+            "Just getting started ..."
         ],
         "professionalDetails": [
             {
-                "alt": "kaustubh-odak",
+                "alt": "LinkedIn",
                 "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/kaustubh-odak/"
+                "link": "https://www.linkedin.com/in/nicolasaguenot/"
             },
             {
-                "alt": "kausko",
-                "icon": "stackoverflow",
-                "link": "https://stackoverflow.com/users/15832433/kausko"
-            },
-            {
-                "alt": "kausko",
-                "icon": "github",
-                "link": "https://github.com/kausko"
+                "alt": "Twitter",
+                "icon": "twitter",
+                "link": "https://twitter.com/nicolasaguenot"
             },
             {
                 "alt": "Email",
                 "icon": "gmail",
-                "link": "mailto:iam@kaustubhodak.me,kaustubhodak1@gmail.com"
+                "link": "mailto:nicolas@com-to-code.com?subject=Contact from Nicolas Aguenot Website"
             }
         ]
     },
     "skills": {
-        "Languages known": [
-            "TypeScript",
-            "JavaScript",
-            "Java",
-            "C++",
-            "Python",
-            "HTML5",
-            "CSS3",
-            "Kotlin",
-            "Dart"
+        "Backend, API, Database, Cloud": [
+            "Symfony",
+            "Flutter",
+            {
+                "alt": "APIPlatform",
+                "icon": "/apiplatform.png",
+                "customIcon": "true",
+                "backgroundColor": "#ececec"
+            },
+
+            "PHP",
+            "MySQL",
+            "Firebase",
+            "Docker"
         ],
         "Frontend": [
             "React",
-            "Redux",
-            "Next.js",
-            "Gatsby",
-            "Netlify",
-            "Vercel",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
             "Material-UI",
-            "antdesign",
             "Bootstrap"
         ],
-        "Backend, Database and Cloud": [
-            "Node.js",
-            "Express",
-            "FastAPI",
-            "MongoDB",
-            "MySQL",
-            "PostgreSQL",
-            {
-                "alt": "Azure",
-                "icon": "microsoftazure"
-            },
-            "Heroku",
-            "Firebase"
-        ],
         "Mobile": [
-            {
-                "alt": "React_Native",
-                "icon": "react",
-                "backgroundColor": "#424242"
-            },
-            "Expo",
             "Android",
-            "Flutter"
+            "Flutter",
+            "Dart"
+        ],
+        "Content management": [
+            {
+                "alt": "Ibexa",
+                "icon": "/ibexa.png",
+                "customIcon": "true",
+                "backgroundColor": "#ececec"
+            },
+            "Wordpress",
+            "Symfony"
         ]
     },
-    "projects": {
-        "baseURI": "https://api.github.com/repos/kausko/",
-        "repositories": [
-            "Portfolio",
-            "Genrealize",
-            "Discord-Google-Drive-Bot",
-            "GitHits",
-            "Mail-em",
-            "JAutoLayout"
-        ]
-    },
+
     "experience": {
         "Work Experience": [
             {
-                "organization": "CloudDFN LLP",
-                "role": "Full Stack Developer",
-                "type": "Internship",
-                "startDate": "2020-07-20",
-                "endDate": "2021-01-20",
-                "city": "Mumbai",
-                "state": "Maharashtra",
-                "country": "India",
-                "url": "https://www.linkedin.com/company/clouddfn-llp/",
-                "thumbnail": "/CDFN.jfif"
+                "organization": "Com to Code",
+                "role": "Owner & Symfony / eZ Platform / eZ Publish / Ibexa DXP / Flutter developer",
+                "startDate": "Since 2015",
+                "city": "Lyon",
+                "country": "France",
+                "url": "https://www.com-to-code.com/"
             },
             {
-                "organization": "NonceBlox Pvt. Ltd.",
-                "role": "Full Stack Developer",
-                "type": "Internship",
-                "startDate": "2021-07-01",
-                "endDate": "2021-10-01",
-                "city": "New Delhi",
-                "state": "Delhi",
-                "country": "India",
-                "url": "https://www.linkedin.com/company/clouddfn-llp/",
-                "thumbnail": "https://www.nonceblox.com/ton3.png"
-            }
-        ],
-        "Volunteer Experience": [
-            {
-                "organization": "PICT IEEE Student Branch (PISB)",
-                "role": "Technical Head",
-                "type": "Member",
-                "startDate": "2019-07-01",
-                "endDate": "",
-                "city": "Pune",
-                "state": "Maharashtra",
-                "country": "India",
-                "url": "https://www.linkedin.com/company/pisbieee/",
-                "thumbnail": "/PISB.jfif"
+                "organization": "Freelance",
+                "role": "Symfony / eZ Platform / eZ Publish developer",
+                "startDate": "2013-08",
+                "endDate": "2015-01",
+                "city": "Lyon",
+                "country": "France",
+                "url": "https://www.linkedin.com/nicolasaguenot/"
             },
             {
-                "organization": "Pictoreal",
-                "role": "Technical Head",
-                "type": "Member",
-                "startDate": "2019-07-01",
-                "endDate": "2021-04-01",
-                "city": "Pune",
-                "state": "Maharashtra",
-                "country": "India",
-                "url": "https://www.linkedin.com/company/pictoreal/",
-                "thumbnail": "/Picto.jfif"
+                "organization": "ICOM - Lyon 2 University",
+                "role": "Temporary teacher",
+                "startDate": "2014-02",
+                "endDate": "2016-02",
+                "city": "Lyon",
+                "country": "France",
+                "url": "https://www.linkedin.com/nicolasaguenot/"
+            },
+            {
+                "organization": "Acti",
+                "role": "Web developer eZ Publish",
+                "startDate": "2013-04",
+                "endDate": "2013-07",
+                "city": "Lyon",
+                "country": "France",
+                "url": "https://www.acti.fr/"
+            },
+            {
+                "organization": "Bolero",
+                "role": "Web developer",
+                "startDate": "2008-06",
+                "endDate": "2013-04",
+                "city": "Lyon",
+                "country": "France",
+                "url": "https://www.bolero.fr/"
             }
         ]
     },
     "about": {
-        "description": "I am a full-stack cross-platform app developer, pursuing my M.S. in Computer Science from Georgia Tech. I strive to make meaningful applications with the best UI practices. ",
-        "picture": "/profile.JPG",
-        "social": []
+        "description": "I am a (real) full-stack developer and Com to Code owner, a digital agency based in Lyon - France, Expert in web & mobile app development (Symfony, eZ platform, eZ Publish, Ibexa DXP, Flutter). Surrounding ourselves with trusted partners in complementary fields (web design, web marketing, SEO, UX, UI, ...). My ambition : Use powerful tools to build powerful solutions. Leitmotiv : Simpler, smarter, no more !",
+        "picture": "/profile.png",
+        "social": [
+            {
+                "alt": "LinkedIn",
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/nicolasaguenot/"
+            },
+            {
+                "alt": "Twitter",
+                "icon": "twitter",
+                "link": "http://twitter.com/nicolasaguenot"
+            },
+            {
+                "alt": "Email",
+                "icon": "gmail",
+                "link": "mailto:nicolas@com-to-code.com?subject=Contact from Nicolas Aguenot Website"
+            }
+        ]
+    },
+    "contact": {
+        "email": "nicolas@com-to-code.com",
+        "phone" : "+33 (0)6 27 32 20 52"
     },
     "theme": {
         "light": {

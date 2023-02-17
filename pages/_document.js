@@ -2,7 +2,7 @@ import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/core/styles';
 import data from '../data.json'
-const { name } = data
+const { name, description } = data
 
 export default class MyDocument extends Document {
   render() {
@@ -12,8 +12,7 @@ export default class MyDocument extends Document {
           <meta charSet='utf-8' />
           {/* PWA primary color */}
           <meta name="theme-color" content="black" />
-          <meta name="description" content={`Portfolio of ${name}`}/>
-          <meta name='keywords' content={'Portfolio ' + name + ' skills projects experience resume'} />
+          <meta name="description" content={`${description}`}/>
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -22,18 +21,17 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
           <link rel="manifest" href="/manifest.webmanifest"></link>
-          {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S0X8Y5X3J"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-P12PCE4B20"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-  
-              gtag('config', 'G-3S0X8Y5X3J');
+              gtag('config', 'G-P12PCE4B20');
               `
             }}
-          /> */}
+          />
         </Head>
         <body>
           <Main />

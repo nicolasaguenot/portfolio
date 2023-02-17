@@ -68,9 +68,6 @@ export default function Experience() {
     return (
         <Grid direction="row" container justify="center" alignItems="center" spacing={10} className={classes.cont}>
             <Grid item xs={12} lg={6}>
-                <Typography variant="h2" gutterBottom align="center">
-                    Experience
-                </Typography>
                 <Hidden mdDown>
                     <Fade in={animate} style={{ transitionDelay: '250ms' }}>
                         <div>
@@ -85,13 +82,13 @@ export default function Experience() {
                 </Hidden>
             </Grid>
             <Grid container item xs={12} lg={6} direction="column" spacing={1} alignItems={align}>
+                <Typography variant="h2" gutterBottom align="center">
+                    Experience
+                </Typography>
                 {
                     Object.getOwnPropertyNames(experience).map((title, id) =>
                         <Grid item key={id} className={classes.expObj}>
-                            <Typography variant="h4" align={textAlign} gutterBottom component="p">
-                                {title}
-                            </Typography>
-                            <Grid container item direction="row" spacing={1} justify="center">
+                            <Grid container item direction="row" spacing={2} justify="center">
                                 {
                                     experience[title].map(({
                                         organization,
@@ -100,12 +97,11 @@ export default function Experience() {
                                         startDate,
                                         endDate,
                                         city,
-                                        state,
                                         country,
                                         url,
                                         thumbnail
                                     }, i) =>
-                                        <Grid item xs={12} sm key={i}>
+                                        <Grid item xs={12} sm={(i === 0) ? 12 : 6} key={i}>
                                             <Fade in={animate} style={{ transitionDelay: `${200 * i}ms` }}>
                                                 <Card className={classes.card}>
                                                     <CardActionArea
@@ -115,27 +111,18 @@ export default function Experience() {
                                                         rel="noopener noreferrer"
                                                     >
                                                         <CardHeader
-                                                            avatar={
-                                                                <Avatar variant="rounded">
-                                                                    <Image
-                                                                        alt={`${organization} logo`}
-                                                                        src={thumbnail}
-                                                                        layout="fill"
-                                                                    />
-                                                                </Avatar>
-                                                            }
-                                                            title={organization}
-                                                            subheader={role + " - " + type}
+                                                            title={role}
+                                                            subheader={organization}
                                                         />
                                                         <CardHeader
                                                             avatar={<DateRange />}
-                                                            title={getHumanDiff(startDate, endDate)}
-                                                            subheader={`${startDate} - ${endDate}`}
+                                                            title={(endDate !== undefined) ? getHumanDiff(startDate, endDate) : getHumanDiff(startDate)}
+                                                            subheader={(endDate !== undefined) ? `${startDate} - ${endDate}` : `${startDate}`}
                                                             className={classes.cardHeader}
                                                         />
                                                         <CardHeader
                                                             avatar={<LocationCity />}
-                                                            subheader={`${city}, ${state}, ${country}`}
+                                                            subheader={`${city}, ${country}`}
                                                             className={classes.cardHeader}
                                                         />
                                                     </CardActionArea>
